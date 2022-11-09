@@ -1,0 +1,14 @@
+header {
+    
+    background-color: #330000;
+    color: darkseagreen
+}
+li {
+    list-style: none;
+    display: inline;
+}
+h1 {
+    background-color: darkseagreen;
+    color: #330000;
+
+}
