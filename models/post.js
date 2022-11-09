@@ -19,6 +19,12 @@ Post.init(
             type: DataTypes.String,
             allowNull: false, 
         }
+    },
+    {
+        sequelize, 
+        timestamps: false,
+        freezeTableName: true,
+        modelName: 'post',
     }
 )
 
