@@ -4,6 +4,7 @@
         0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
         0 0 40px #A5F1FF;
 }
+
 body {
     background-color: black;
     color: var(--text);
@@ -12,18 +13,41 @@ body {
 
 h1 {
     margin-left: 40px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-color: #A5F1FF;
+    margin-top: 30px;
+    padding-left: 8px;
+    display: inline;
+    float: inline-end;
+    padding-right: 10px;
 }
+
 li {
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
     margin: 30px;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
 }
+
+li:hover {
+    -webkit-filter: brightness(100%);
+}
+
 a {
     text-decoration: none;
     color: var(--text);
     text-shadow: var(--text-shadow);
 }
+
 .login-box {
     border-style: solid;
     border-color: var(--text);
@@ -32,8 +56,14 @@ a {
     justify-content: center;
     margin-top: 100px;
 }
+
 .login-form {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
+
+nav {
+    border: solid;
+}
+
