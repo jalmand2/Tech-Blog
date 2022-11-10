@@ -1,5 +1,4 @@
 const Comment = require('./comment');
-const Home = require('./home');
 const User = require('./user');
 const Post = require('./post');
 
@@ -22,4 +21,4 @@ Comment.belongsTo(Post, {
     foreignKey: 'post_id'
 });
 
-module.exports = { Comment, Home, User, Post };
+module.exports = { Comment, User, Post };

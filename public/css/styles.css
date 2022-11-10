@@ -65,5 +65,6 @@ a {
 
 nav {
     border: solid;
+    border-color: var(--text);
 }
 
