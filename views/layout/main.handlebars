@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,33 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <title>Tech Blog Homepage</title>
 </head>
+
 <body>
     <header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Dashboard</li>
-            <li> <a href="/login">Login</a></li>
-            <li>Logout</li>
-        </ul>
-        <h1>The Tech Blog</h1>
-    </nav>
-    <main>
+        <nav>
 
+            <ul>
+                <li>Home</li>
+                <li>Dashboard</li>
+                <!-- Conditionally render login or logout links -->
+                {{#if logged_in}}
+                <li><button class="no-button" id="logout">logout</button></li>
+                {{else}}
+                <li><a href="/login">Login</a></li>
+                {{/if}}
+            </ul>
+            <h1>The Tech Blog</h1>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Render the sub layout -->
+        {{{ body }}}
     </main>
-</header>
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
+
 </html>
