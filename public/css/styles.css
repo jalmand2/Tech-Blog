@@ -57,29 +57,39 @@ a {
     margin-top: 100px;
 }
 
-.login-form {
+.form-frame {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-
-
-label{
+label {
     display: inline-block;
     float: left;
     clear: left;
     width: 250px;
     text-align: right;
 }
+button {
+    display: flex;
+    justify-content: center;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    margin-left: 250px;
+}
+.signup-instead {
+    margin: 200px;
+}
 input {
   display: inline-block;
   float: left;
 }
-.login-group {
-    display: flex;
-    flex-direction: row;
+.form-group {
+    margin: 10px;
 }
+
 .form-inline button {
     padding: 10px 20px;
     background-color: dodgerblue;
